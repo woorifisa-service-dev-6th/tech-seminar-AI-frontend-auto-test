@@ -9,7 +9,7 @@ node server.js
 ```
 - 클라이언트 실행 경로: 
 ``` bash
-
+npm run dev
 ```
 - 
 
