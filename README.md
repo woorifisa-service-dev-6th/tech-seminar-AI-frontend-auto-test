@@ -5,6 +5,8 @@ github URL: https://github.com/Nan-Navi-60/Clova-ChatBot/tree/main
 ![6  시연영상](https://github.com/user-attachments/assets/651a8302-4eb8-4bd7-b6ce-beba876b73da)
 
 ### Slack
+![AI를 활용한 프론트엔드 테스트 자동화](https://github.com/user-attachments/assets/3631068c-5514-461a-9781-85f96b4cf874)
+
 
 ## 실행 가이드
 - 서버 실행 경로:
