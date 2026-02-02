@@ -1,5 +1,5 @@
 # Frontend Test Automation using AI (Gemini CLI)
-github URL: 
+github URL: https://github.com/Nan-Navi-60/Clova-ChatBot/tree/main
 ## 결과 예시 
 
 ## 실행 가이드
