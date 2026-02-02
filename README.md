@@ -1,6 +1,10 @@
 # Frontend Test Automation using AI (Gemini CLI)
 github URL: https://github.com/Nan-Navi-60/Clova-ChatBot/tree/main
 ## 결과 예시 
+### Playwright
+![6  시연영상](https://github.com/user-attachments/assets/651a8302-4eb8-4bd7-b6ce-beba876b73da)
+
+### Slack
 
 ## 실행 가이드
 - 서버 실행 경로:
@@ -24,8 +28,16 @@ SLACK_WEBHOOK_URL={your_slack_webhook_url} // SLACK BOT 연동을 이용할 경�
 ```
 
 ## 프로젝트 구조
+![5](https://github.com/user-attachments/assets/e6080961-221b-4611-8679-f302a9ef4a51)
+![6](https://github.com/user-attachments/assets/b515f7bb-0b87-45a9-bd6f-ff7a0a85598f)
+
 
 ## 폴더 설명 
+
+# Chatbot 기능 소개
+![AI를 활용한 프론트엔드 테스트 자동화](https://github.com/user-attachments/assets/90c508c2-3975-4f8f-805e-bfef9c698274)
+
+![AI를 활용한 프론트엔드 테스트 자동화 (1)](https://github.com/user-attachments/assets/9b80fcbc-4be3-46df-9684-a03ca406894b)
 
 
 
