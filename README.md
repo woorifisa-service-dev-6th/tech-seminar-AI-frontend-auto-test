@@ -62,8 +62,8 @@ AI를 단순한 도구가 아닌 독립적인 **'에이전트(Agent)'** 단위�
 
 ### AI 에이전트 역할 분담
 * **SDET Agent**: 테스트 설계 및 Playwright 기반 아키텍처 구축.
-* **Documentation Specialist**: 테스트 시나리오 구조화 및 개발 일지 자동 생성.
-* **Git Master**: 코드 변경 요약, PR 리뷰 및 수정 제안 자동화.
+* **Documentation Specialist**: 테스트 시나리오 구조화 및 개선 사항 자동 생성.
+* **Git Master**: 코드 변경 요약, PR 리뷰 후 수정 제안 자동화.
 
 ---
 ##  3. Key Features
