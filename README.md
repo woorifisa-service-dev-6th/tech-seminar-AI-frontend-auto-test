@@ -55,10 +55,10 @@ AI를 단순한 도구가 아닌 독립적인 **'에이전트(Agent)'** 단위�
 ### 기술 스택
 | 분류 | 기술 |
 | :--- | :--- |
-| **Framework** | `React`, `TypeScript` |
+| **Framework** | `React` |
 | **Testing Tool** | `Playwright` |
 | **AI Model** | `Gemini 2.5 Flash` (Gemini-CLI) |
-| **Automation** | `Shell Script`, `Node.js` |
+| **Automation** | `Shell Script` |
 
 ### AI 에이전트 역할 분담
 * **SDET Agent**: 테스트 설계 및 Playwright 기반 아키텍처 구축.
