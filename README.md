@@ -15,7 +15,11 @@ node server.js
 ``` bash
 npm run dev
 ```
-- 
+- 테스팅 자동화 명령어 실행 경로:
+``` bash
+npm run test-and-report
+npm run propose-improvements
+```
 
 ### 환경 세팅
 
