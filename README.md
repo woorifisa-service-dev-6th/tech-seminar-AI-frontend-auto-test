@@ -58,20 +58,17 @@ AI를 단순한 도구가 아닌 독립적인 **'에이전트(Agent)'** 단위�
 | **Framework** | `React` |
 | **Testing Tool** | `Playwright` |
 | **AI Model** | `Gemini 2.5 Flash` (Gemini-CLI) |
-| **Automation** | `Shell Script` |
 
 ### AI 에이전트 역할 분담
 * **SDET Agent**: 테스트 설계 및 Playwright 기반 아키텍처 구축.
 * **Documentation Specialist**: 테스트 시나리오 구조화 및 개선 사항 자동 생성.
-* **Git Master**: 코드 변경 요약, PR 리뷰 후 수정 제안 자동화.
-
+  
 ---
 ##  3. Key Features
 
 ### 1) 금융 챗봇(Woori-CLOVA) E2E 테스트
 * **입력 폼 검증**: 사용자 데이터 유효성 검증 로직 테스트.
 * **비동기 통신**: API 호출 및 데이터 렌더링(Async/Sync) 흐름 체크.
-* **성능 로직**: Throttling 및 Debouncing(3초 대기 등) 정상 작동 여부 확인.
 
 ### 2) 지능형 자동화 워크플로우
 1. **분석**: `Gemini-CLI`가 프로젝트 전체 흐름과 코드 구조를 파악.
