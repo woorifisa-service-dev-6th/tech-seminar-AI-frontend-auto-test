@@ -1,73 +1,22 @@
 # Frontend Test Automation using AI (Gemini CLI)
 github URL: https://github.com/Nan-Navi-60/Clova-ChatBot/tree/main
-## 결과 예시 
-### Playwright
-![6  시연영상](https://github.com/user-attachments/assets/651a8302-4eb8-4bd7-b6ce-beba876b73da)
 
-### Slack
-![AI를 활용한 프론트엔드 테스트 자동화](https://github.com/user-attachments/assets/3631068c-5514-461a-9781-85f96b4cf874)
+# 🤖 Agentic Frontend Test Automation
+> **AI 에이전트(Gemini)가 주도하는 프론트엔드 QA 및 유지보수 자동화 솔루션**
 
+## 🌟 Project Overview
+본 프로젝트는 **Gemini CLI**를 단순한 보조 도구가 아닌 독립적인 **'SDET 에이전트'**로 설계하여, 테스트 코드 작성부터 결과 분석, 리팩토링 제안까지 수행하는 **Closed-loop** 시스템을 구현했습니다.
 
-## 실행 가이드
-- 서버 실행 경로:
-``` bash
-node server.js
-```
-- 클라이언트 실행 경로: 
-``` bash
-npm run dev
-```
-- 테스팅 자동화 명령어 실행 경로:
-``` bash
-npm run test-and-report
-npm run propose-improvements
-```
-
-### 환경 세팅
-
-- .env 파일
-``` bash
-CLOVACHAT={APIGW_Invoke_URL} // CHATBOT 프로젝트를 이용할 경우 설정
-CLIENT_SECRET={SECRET_KEY} // CHATBOT 프로젝트를 이용할 경우 설정
-
-SLACK_WEBHOOK_URL={your_slack_webhook_url} // SLACK BOT 연동을 이용할 경우 설정
-```
-
-## 프로젝트 구조
+## 🏗 System Architecture
+AI 에이전트가 프로젝트 구조를 파악하고 스스로 테스트를 수행하는 지능형 워크플로우를 가집니다.
 ![5](https://github.com/user-attachments/assets/e6080961-221b-4611-8679-f302a9ef4a51)
 ![6](https://github.com/user-attachments/assets/b515f7bb-0b87-45a9-bd6f-ff7a0a85598f)
 
 
-## 폴더 설명 
-
-# Chatbot 기능 소개
-![AI를 활용한 프론트엔드 테스트 자동화](https://github.com/user-attachments/assets/90c508c2-3975-4f8f-805e-bfef9c698274)
-
-![AI를 활용한 프론트엔드 테스트 자동화 (1)](https://github.com/user-attachments/assets/9b80fcbc-4be3-46df-9684-a03ca406894b)
-
-
-
-
-#  Agentic Frontend Test Automation
-> **AI 에이전트를 활용한 프론트엔드 테스트 자동화 및 Closed-loop 유지보수 시스템**
-
-AI를 단순한 도구가 아닌 독립적인 **'에이전트(Agent)'** 단위로 설계하여, 테스트 시나리오 설계부터 결과 분석, 코드 수정 제안까지 수행하는 지능형 자동화 솔루션입니다.
-
----
-
-##  1. Project Overview
-
-### 배경 및 필요성
-* **테스트 번거로움**: 프로젝트 규모에 따라 복잡해지는 테스트 시나리오와 테스트 코드 작성에 많은 시간이 소요됨.
-* **AI를 활용한 테스트 효율화**: AI가 프로젝트의 흐름을 파악하고 주어진 시나리오를 통해 테스트 코드를 작성하고 테스트를 진행.
-
-### 목표
-* AI를 활용하여 테스트 코드 작성 및 진행
-* 테스트 실패 시 원인 분석 및 해결책 제안.
-
----
-
-##  2. System Architecture & Tech Stack
+1. **분석**: `Gemini-CLI`가 코드 구조 파악
+2. **생성**: 기능별 데이터 라벨링(`data-testid`) 감지 및 테스트 코드 작성
+3. **실행**: `Playwright` 기반 자동 테스트 수행
+4. **개선**: 결과 분석 후 코드 수정안 및 리팩토링 방안 제안
 
 ### 기술 스택
 | 분류 | 기술 |
@@ -76,29 +25,45 @@ AI를 단순한 도구가 아닌 독립적인 **'에이전트(Agent)'** 단위�
 | **Testing Tool** | `Playwright` |
 | **AI Model** | `Gemini 2.5 Flash` (Gemini-CLI) |
 
-### AI 에이전트 역할 분담
-* **SDET Agent**: 테스트 설계 및 Playwright 기반 아키텍처 구축.
-* **Documentation Specialist**: 테스트 시나리오 구조화 및 개선 사항 자동 생성.
-  
----
-##  3. Key Features
+## 🚀 Key Features
+- **금융 챗봇 E2E 테스트**: 비동기 API 통신 및 데이터 유효성 검증
+- **지능형 리포팅**: 테스트 결과를 Slack API를 통해 자동 전송
+- **Self-Healing**: 테스트 실패 시 AI가 원인을 분석하여 즉각적인 수정 대안 제시
 
-### 1) 금융 챗봇(Woori-CLOVA) E2E 테스트
-* **입력 폼 검증**: 사용자 데이터 유효성 검증 로직 테스트.
-* **비동기 통신**: API 호출 및 데이터 렌더링(Async/Sync) 흐름 체크.
+## Chatbot Project Introduction
 
-### 2) 지능형 자동화 워크플로우
-1. **분석**: `Gemini-CLI`가 프로젝트 전체 흐름과 코드 구조를 파악.
-2. **생성**: 기능별 데이터 라벨링(`data-cy`)을 감지하여 최적의 테스트 코드 작성.
-3. **실행**: 생성된 코드를 기반으로 자동 테스트 수행 및 결과(`json`) 반환.
-4. **개선**: 테스트 결과 분석 후, 실제 파일의 코드 수정 및 리팩토링 방안 제안.
+본 자동화 시스템의 성능을 검증하기 위해 금융 챗봇 프로젝트를 예시 타겟으로 선정했습니다.
 
----
+![AI를 활용한 프론트엔드 테스트 자동화](https://github.com/user-attachments/assets/90c508c2-3975-4f8f-805e-bfef9c698274)
 
-##  4. Expected Effects
-* **QA 사이클 단축**: 자동화를 통한 즉각적인 피드백 및 테스트 비용 절감.
-* **코드 안정성 확보**: 리팩토링 시 기존 기능의 정상 작동을 보장하는 안전망 구축.
-* **생산성 극대화**: 사람이 찾기 어려운 논리적 오류를 탐지하고 수정 대안 제시.
+![AI를 활용한 프론트엔드 테스트 자동화 (1)](https://github.com/user-attachments/assets/9b80fcbc-4be3-46df-9684-a03ca406894b)
 
----
+💡 Note: 커스텀 프로젝트 적용 가능 본 레포지토리는 금융 챗봇을 예시로 가이드하고 있지만, 사용자의 개별 프론트엔드 프로젝트에도 동일하게 적용할 수 있습니다. data-testid 태그 설정과 Gemini CLI 프롬프트 수정을 통해 어떤 React 프로젝트든 자동화 테스트 환경 구축이 가능합니다.
 
+
+## 📺 Demo
+### Playwright 시연
+![6  시연영상](https://github.com/user-attachments/assets/651a8302-4eb8-4bd7-b6ce-beba876b73da)
+### Slack 알림 결과
+![AI를 활용한 프론트엔드 테스트 자동화](https://github.com/user-attachments/assets/3631068c-5514-461a-9781-85f96b4cf874)
+
+## 💻 Getting Started
+### 환경 세팅 (.env)
+```bash
+CLOVACHAT={APIGW_Invoke_URL}
+CLIENT_SECRET={SECRET_KEY}
+SLACK_WEBHOOK_URL={your_slack_webhook_url}
+```
+
+### 실행 가이드
+```bash
+# 1. 서버 및 클라이언트 실행
+node server.js
+npm run dev
+
+# 2. 테스트 자동화 및 리포트 생성
+npm run test-and-report
+
+# 3. AI 개선 제안 확인
+npm run propose-improvements
+```
